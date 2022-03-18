@@ -1,0 +1,124 @@
+.index-container {
+    display: grid;
+    padding: 0 50px;
+    grid-template-columns: 780px 1fr;
+    gap: 10px;
+}
+
+.index-container .main-seller .work-notify {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 56px 56px;
+    padding-top: 40px;
+    row-gap: 10px;
+}
+
+.index-container .main-seller .work-notify a {
+    color: var(--fontb-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    border-right: 1px solid #ccc;
+}
+
+.index-container .main-seller .work-notify a:nth-child(4),
+.index-container .main-seller .work-notify a:nth-child(8) {
+    border: none;
+}
+
+.index-container .main-seller .work-notify a span {
+    line-height: 40px;
+    font-size: 16px;
+    color: var(--main-color);
+}
+
+.index-container .main-seller .work-notify a:hover {
+    border-radius: 1px;
+    background-color: var(--main-bg-color);
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) {
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    gap: 10px;
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) .title {
+    display: flex;
+    grid-column: 1/5;
+    flex-flow: row;
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) .title span {
+    color: var(--gray-color);
+    font-size: 11px;
+    transform: translateY(7px);
+    margin-left: 2px;
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) .title a {
+    color: var(--main-color);
+    font-size: 13px;
+    transform: translateY(5px);
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+}
+
+.index-container .main-seller .seller_card-item .title:nth-child(2) a ion-icon {
+    font-size: 12px;
+    transform: translate(-5px, 2px);
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) .chart {
+    grid-row: 2/4;
+    grid-column: 1/1;
+    max-width: 100%;
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) .item {
+    padding: 15px 0px;
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) .item p {
+    color: var(--gray-color);
+    text-transform: capitalize;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) .item span {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.index-container .main-seller .seller_card-item:nth-child(2) .item:nth-child(3) {
+    grid-row: 3/4;
+    grid-column: 2/4;
+    border-top: 1px solid #ccc;
+}
+
+
+/*-----------------THONG BAO------------------------------*/
+
+.side-seller .notifi h3 {
+    margin-bottom: 20px;
+}
+
+.side-seller .notifi ul li {
+    list-style: none;
+    padding-left: 20px;
+    font-size: 14px;
+    color: var(--gray-color);
+    margin-bottom: 15px;
+}
+
+.side-seller .notifi ul li p {
+    color: var(--main-color);
+    font-size: 12px;
+    margin: 5px;
+}
+
+.side-seller .notifi ul li:hover {
+    color: var(--main-color);
+}

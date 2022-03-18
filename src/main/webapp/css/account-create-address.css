@@ -1,0 +1,48 @@
+.account-create-address .form-input {
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: 150px 1fr;
+    row-gap: 20px;
+    column-gap: 10px;
+    vertical-align: middle;
+    margin-top: 20px;
+    padding: 30px 16px;
+}
+
+.account-create-address .form-input input,
+.account-create-address .form-input select,
+.account-create-address .form-input textarea {
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 8px 6px;
+}
+
+.account-create-address .form-input p {
+    line-height: 30px;
+    text-align: right;
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+.account-create-address .form-input label {
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--gray-color);
+}
+
+.account-create-address .form-input #is-default {
+    transform: translateX(140px);
+}
+
+.account-create-address .form-input .submit {
+    grid-column: 2/3;
+    width: 180px;
+    padding: 8px;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: var(--font-color);
+    background-color: var(--main-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

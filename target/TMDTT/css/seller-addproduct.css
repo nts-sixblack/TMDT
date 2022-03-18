@@ -1,0 +1,271 @@
+input::placeholder {
+    font-size: 13px;
+}
+
+.add_product {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+    padding-bottom: 40px !important;
+}
+
+.add_product h3 {
+    grid-column: 1/3;
+    margin-bottom: 20px;
+}
+
+.add_product .category {
+    width: 616px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.add_product .category select {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    height: 35px;
+    font-size: 14px;
+    padding: 0 7px;
+}
+
+.add_product p {
+    font-size: 14px;
+    text-align: right;
+    color: var(--gray-color);
+    line-height: 30px;
+}
+
+.add_product input {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    height: 30px;
+    font-size: 14px;
+    padding: 0 7px;
+    max-width: 600px;
+}
+
+.add_product textarea {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 7px;
+    width: 600px;
+}
+
+.add_product .size-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.add_product .size-product input {
+    width: 100%;
+}
+
+.add_product .group,
+.add_product .un-group {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.add_product .container-group {
+    grid-column: 1/3;
+}
+
+
+/* 
+.add_product .group {
+    display: none;
+} */
+
+.add_product .add-group-product {
+    max-width: 614px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--main-color);
+    line-height: 40px;
+    border: 1px dashed var(--main-color);
+    cursor: pointer;
+    grid-column: 2/3;
+}
+
+.add_product .add-group-product:hover {
+    background-color: var(--main-bg-color);
+}
+
+.add_product .add-group-product ion-icon {
+    font-size: 13px;
+    transform: translateY(2px);
+}
+
+.add_product .add-group {
+    background-color: var(--main-bg-color);
+    width: 700px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    padding: 20px 0;
+}
+
+.add_product .add-group p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.add_product .add-group input {
+    width: 515px;
+    margin-bottom: 10px;
+}
+
+.add_product .add-group .close-group {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.add_product .add-group ion-icon:hover {
+    border-radius: 100px;
+    background-color: white;
+}
+
+.add_product .add-group label {
+    grid-column: 2/3;
+    text-align: center;
+    height: 40px;
+    border: 1px dashed var(--main-color);
+    width: 528px;
+    line-height: 40px;
+    font-size: 13px;
+    color: var(--main-color);
+}
+
+.add_product .add-group .price-to-type .price-to-type_item {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 25px 1fr 65px 1fr;
+    column-gap: 10px;
+    background-color: var(--font-color);
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.add_product .add-group .price-to-type .price-to-type_item .type-name-product {
+    grid-column: 1/5;
+    width: 98%;
+}
+
+.add_product .add-group .price-to-type .price-to-type_item input {
+    width: 95%;
+}
+
+.add_product .add-group .price-to-type p {
+    text-align: right;
+}
+
+.add_product .add-group ion-icon {
+    transform: translateY(2px);
+}
+
+.add_product .add-group label:hover {
+    background-color: white;
+}
+
+.btn-submit {
+    height: 100px;
+}
+
+.btn-submit button {
+    border: none;
+    color: white;
+    background-color: var(--highlight-color);
+    outline: none;
+    padding: 7px 50px;
+    border-radius: 0;
+    float: right;
+    border: 1px solid var(--highlight-color);
+}
+
+.btn-submit button:hover {
+    opacity: .9;
+}
+
+.btn-submit .cancel {
+    background: none;
+    border: 1px solid var(--main-color);
+    margin: 0 150px 50px 10px;
+    color: var(--main-color);
+}
+
+.add_product .inputImage-container {
+    width: 600px;
+}
+
+.add_product .inputImage-container label {
+    font-size: 14px;
+    background: var(--main-color);
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.add_product .inputImage-container label ion-icon {
+    font-size: 20px;
+    transform: translateY(4px);
+}
+
+.add_product .inputImage-container span {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.add_product .inputImage-container .box-inputImg {
+    width: 700px;
+    height: 200px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    border: 1px dashed #ccc;
+    position: relative;
+    overflow: scroll;
+    background: var(--bg-color);
+    padding: 5px;
+}
+
+.add_product .inputImage-container .box-inputImg ion-icon {
+    color: rgb(235, 235, 235);
+    font-size: 45px;
+    position: absolute;
+    top: 50px;
+    left: 330px;
+}
+
+.add_product .inputImage-container .box-inputImg figure {
+    width: 100%;
+}
+
+.add_product .inputImage-container .box-inputImg img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.add_product .inputImage-container .box-inputImg figcaption {
+    font-size: 13px;
+    text-align: center;
+}

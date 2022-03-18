@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-family: "Helvetica Neue", Helvetica, Arial, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.seller-navbar {
+    width: 1420px;
+    max-width: 1440px;
+    display: grid;
+    padding: 3px 10px;
+    grid-template-rows: 50px;
+    grid-template-columns: 100px 1fr 180px 100px;
+    gap: 5px;
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.seller-navbar img {
+    width: 100%;
+}
+
+.seller-navbar .content-box p {
+    font-size: 19px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: var(--gray-color);
+}
+
+.seller-navbar .seller-infor {
+    display: flex;
+    flex-flow: row;
+    height: 40px;
+    justify-content: end;
+    margin: auto;
+    padding: 0 10px 0 5px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.seller-navbar .seller-infor:hover {
+    background-color: var(--main-bg-color);
+}
+
+.seller-navbar .seller-infor img {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+    border-radius: 100px;
+    transform: translateY(5px);
+}
+
+.seller-navbar .seller-infor p {
+    flex-basis: 1;
+    color: var(--main-color);
+    line-height: 40px;
+    margin-left: 5px;
+}
+
+.seller-navbar .navbar-action {
+    border-left: 1px solid #ccc;
+    height: 35px;
+    margin: auto 0;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.seller-navbar .navbar-action ion-icon {
+    font-size: 22px;
+    background-color: var(--main-bg-color);
+    border-radius: 100px;
+    padding: 7px;
+}
+
+.seller-navbar .navbar-action .notification-wrap {
+    text-align: center;
+}
+
+.seller-navbar .navbar-action .dropdown-btn a {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.notification-wrap .notify-box {
+    position: absolute;
+    background-color: var(--font-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px;
+    width: 380px;
+    height: 450px;
+    right: 30px;
+    top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    animation: sellerNotify-animate ease-in .25s;
+    transform-origin: 90% top;
+    display: none;
+    will-change: sellerNotify-animate, transform;
+}
+
+.notification-wrap:hover>.notify-box {
+    display: grid;
+}
+
+@keyframes sellerNotify-animate {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.notification-wrap .notify-box::before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    top: -7px;
+    right: 40px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: inherit;
+    border-left: 1px solid var(--bg-color);
+    border-top: 1px solid var(--bg-color);
+}
+
+.notification-wrap .notify-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: -30px;
+    right: 0;
+}
+
+.notification-wrap .notify-box ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    overflow-y: scroll;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.notification-wrap .notify-box ul .item-notify {
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    background-color: var(--main-bg-color);
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.notification-wrap .notify-box ul .item-notify:hover {
+    background-color: white;
+}
+
+.notification-wrap .notify-box ul .item-notify img {
+    object-fit: contain;
+    margin: auto;
+}
+
+.notification-wrap .notify-box ul .item-notify p {
+    font-size: 14px;
+    font-weight: 300;
+    height: 2.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+}
+
+.notification-wrap .notify-box ul .item-notify span {
+    font-size: 13px;
+    font-weight: 250;
+}
+
+.notification-wrap .notify-box ul .item-notify ion-icon {
+    font-size: 13px;
+    background: none;
+    padding: 0 3px;
+}
+
+.notification-wrap .notify-box button {
+    border: none;
+    background: none;
+    border-top: 1px solid #ccc;
+}
+
+.notification-wrap .notify-box button a:hover {
+    color: var(--highlight-color);
+}
+
+.notification-wrap .notify-box button a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--fontb-color);
+}
+
+
+/*--------------------------------*/
+
+.seller-main-container {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+}
+
+.seller-main-container .seller-sidebar {
+    background-color: white;
+    height: calc(100vh - 80px);
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: column;
+    padding: 13px 16px;
+    line-height: 1.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.seller-main-container .seller-sidebar a {
+    color: var(--fontb-color);
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.seller-main-container .seller-sidebar ul li {
+    list-style: none;
+    transform: translateX(35px);
+    cursor: pointer;
+}
+
+.seller-main-container .seller-sidebar a:hover {
+    color: var(--highlight-color);
+}
+
+.seller-main-container .seller-sidebar b {
+    font-size: 15px;
+    line-height: 40px;
+    color: var(--gray-color);
+}
+
+.seller-main-container .seller-sidebar ion-icon {
+    font-size: 17px;
+    transform: translateY(2px);
+    margin-right: 5px;
+    color: var(--gray-color);
+}
+
+.seller-main-container .seller-sidebar .is-active {
+    color: var(--highlight-color);
+    font-weight: 650;
+}
+
+.seller-main-container .seller-content-container {
+    width: 1200px;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    display: inline-block;
+    padding-top: 15px;
+    margin: 0 auto;
+}

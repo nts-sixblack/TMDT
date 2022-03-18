@@ -1,0 +1,105 @@
+.all-product {
+    display: flex;
+    flex-flow: column;
+}
+
+.all-product .nav-allproduct ul {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 10px 3px;
+    list-style: none;
+    border-bottom: .01rem solid var(--bg-color);
+    margin-bottom: 20px;
+}
+
+.all-product .nav-allproduct ul li a {
+    text-decoration: none;
+    padding: 10px 13px;
+    color: black;
+    font-size: 14px;
+}
+
+.all-product .nav-allproduct ul li a.is-active {
+    border-bottom: 3px solid var(--main-color);
+}
+
+.all-product .count-product {
+    font-size: 22px;
+    margin-left: 14px;
+}
+
+.all-product .container-product {
+    display: flex;
+    flex-flow: column;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background: var(--main-bg-color);
+}
+
+.all-product .container-product .card-item {
+    padding: 13px 16px;
+    display: grid;
+    grid-template-columns: 1fr 200px 150px 100px 130px 90px 30px 30px;
+    text-align: center;
+    background: var(--font-color);
+    margin-top: 6px;
+}
+
+.all-product .container-product .nav {
+    background: var(--main-bg-color);
+    border: none;
+    margin: 0;
+}
+
+.all-product .container-product .card-item .name-pr {
+    display: flex;
+    flex-flow: row;
+    text-align: left;
+    font-size: 14px;
+}
+
+.all-product .container-product .card-item .name-pr img {
+    width: 90px;
+    height: 90px;
+    margin-right: 5px;
+}
+
+.all-product .container-product .card-item .name-pr p {
+    padding-top: 15px;
+}
+
+.all-product .container-product .card-item span {
+    padding: 28px;
+}
+
+.all-product .container-product .card-item button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.all-product .container-product .card-item a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.all-product .container-product .card-item .delete-pr:hover {
+    color: rgb(218, 2, 2);
+}
+
+.all-product .container-product .empty-card {
+    width: 100%;
+    background: white;
+    position: relative;
+    height: 500px;
+}
+
+.all-product .container-product .empty-card img {
+    width: 300px;
+    position: absolute;
+    top: 100px;
+    right: 38%;
+}

@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    max-width: 1500px;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-family: "Helvetica Neue", Helvetica, Arial, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+}
+
+.register-container {
+    display: grid;
+    max-width: 1500px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.register-container .banner {
+    background: white;
+    max-width: 90%;
+    height: 100vh;
+}
+
+.register-container .banner img {
+    max-width: 100%;
+    margin-top: 230px;
+    transform: translateX(190px);
+}
+
+.register-container .logo {
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    top: 10px;
+}
+
+.register-container .logo img {
+    width: 130px;
+    transform: translateX(100px);
+}
+
+.register-container .form-input {
+    display: flex;
+    flex-flow: column;
+    width: 470px;
+    margin-top: 120px;
+    transform: translateX(80px);
+    line-height: 1.4rem;
+}
+
+.register-container .form-input h2 {
+    margin-bottom: 20px;
+}
+
+.register-container .form-input span {
+    color: var(--gray-color);
+    font-size: 14px;
+}
+
+.register-container .form-input input,
+.register-container .form-input select {
+    border: none;
+    padding: 12px 15px;
+    margin: 6px 0 20px 0;
+    outline: none;
+}
+
+.register-container .form-input .btn-submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: var(--highlight-color);
+    color: var(--font-color);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}

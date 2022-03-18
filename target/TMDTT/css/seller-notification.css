@@ -1,0 +1,92 @@
+.notify-container {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.notify-container .type-notify {
+    display: flex;
+    flex-flow: column;
+    height: min-content;
+}
+
+.notify-container .type-notify a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    line-height: 2rem;
+    font-weight: 340;
+}
+
+.notify-container .type-notify a.is-active {
+    font-weight: 500;
+    color: var(--highlight-color);
+}
+
+.notify-container .type-notify a.all-type {
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    margin-bottom: 10px;
+}
+
+.notify-container .type-notify ul {
+    list-style: none;
+}
+
+.notify-container .list-notify {
+    display: flex;
+    flex-flow: column;
+}
+
+.notify-container .list-notify h3 {
+    margin-bottom: 30px;
+}
+
+.notify-container .list-notify ul {
+    list-style: none;
+    height: 660px;
+    overflow-y: scroll;
+}
+
+.notify-container .list-notify ul .notify-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 10px;
+    background-color: var(--main-bg-color);
+    padding: 10px 13px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--fontb-color);
+    text-decoration: none;
+}
+
+.notify-container .list-notify ul .notify-item h4 {
+    margin-bottom: 4px;
+}
+
+.notify-container .list-notify ul .notify-item:hover {
+    background-color: rgb(233, 231, 231);
+}
+
+.notify-container .list-notify ul .notify-item img {
+    max-width: 100%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.notify-container .list-notify ul .notify-item p {
+    font-size: 14px;
+    font-weight: 350;
+}
+
+.notify-container .list-notify ul .notify-item span {
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--main-color);
+}
+
+.notify-container .list-notify ul .notify-item span ion-icon {
+    transform: translateY(2px);
+}

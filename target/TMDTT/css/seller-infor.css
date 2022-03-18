@@ -1,0 +1,66 @@
+.seller-inf-container {
+    display: grid;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.seller-inf-container h3 {
+    margin-bottom: 10px;
+}
+
+.seller-inf-container .form-edit {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 10px;
+}
+
+.seller-inf-container .form-edit p {
+    font-size: 14px;
+    color: black;
+    line-height: 50px;
+    text-align: right;
+}
+
+.seller-inf-container .form-edit input {
+    height: 25px;
+    padding: 3px 10px;
+    width: 500px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    color: var(--gray-color);
+    transform: translateY(10px);
+    outline: none;
+}
+
+.seller-inf-container .form-edit .select-gender {
+    display: grid;
+    grid-template-columns: 20px 50px 20px 50px;
+    transform: translateX(30px);
+}
+
+.form-edit .select-gender input {
+    height: 17px;
+    width: 12px;
+    transform: translateY(15px);
+}
+
+.form-edit .select-gender label {
+    transform: translateY(15px);
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+.form-edit .btn-submit {
+    grid-column: 2/3;
+    margin-top: 30px;
+}
+
+.form-edit .btn-submit button {
+    font-size: 14px;
+    padding: 8px 15px;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: var(--font-color);
+    width: 140px;
+    cursor: pointer;
+}

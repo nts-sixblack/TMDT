@@ -1,0 +1,199 @@
+.profile-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.profile-container--title {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 25px 10px;
+}
+
+.profile-container--title span {
+    font-size: 13px;
+    color: var(--gray-color);
+}
+
+.profile-container--content {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.profile-container--content .side {
+    padding: 10px;
+}
+
+.profile-container--content .side .edit-img {
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.profile-container--content .side .edit-img .seller-infor {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    transform: translateY(105px);
+    background: var(--main-bg-color);
+    border-radius: 5px;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.profile-container--content .side .edit-img .seller-infor img {
+    width: 90px;
+    border-radius: 100px;
+    margin-left: 5px;
+}
+
+.profile-container--content .side .edit-img .seller-infor .text {
+    margin-top: 25px;
+}
+
+.profile-container--content .side .edit-img .seller-infor h4 {
+    margin-bottom: 2px;
+    color: white;
+}
+
+.profile-container--content .side .edit-img .seller-infor .text p {
+    font-size: 13px;
+    color: var(--gray-color);
+    line-height: 1.3rem;
+}
+
+.profile-container--content .side .btn-edit {
+    transform: translateY(65px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.profile-container--content .side .btn-edit label {
+    border-radius: 5px;
+    background: var(--font-color);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.profile-container--content .side .btn-edit label:hover {
+    background: var(--main-color);
+    color: var(--font-color);
+}
+
+.profile-container--content .main {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    margin-top: 5px;
+}
+
+.profile-container--content .main h3 {
+    margin: 5px 0;
+}
+
+.profile-container--content .main input {
+    height: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    padding: 3px 6px;
+    margin-bottom: 15px;
+}
+
+.profile-container--content .main textarea {
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    padding: 3px 6px;
+    margin-bottom: 15px;
+}
+
+
+/* ----------------------------------------------- */
+
+.inputImage-container {
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.inputImage-container label {
+    font-size: 13px;
+    background: var(--main-color);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inputImage-container label ion-icon {
+    font-size: 20px;
+    transform: translateY(4px);
+}
+
+.inputImage-container span {
+    font-size: 13px;
+    padding: 5px;
+}
+
+.inputImage-container .box-inputImg {
+    width: 630px;
+    height: 200px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    border: 1px dashed #ccc;
+    position: relative;
+    overflow: scroll;
+    background: var(--bg-color);
+    padding: 5px;
+}
+
+.inputImage-container .box-inputImg ion-icon {
+    color: rgb(235, 235, 235);
+    font-size: 45px;
+    position: absolute;
+    top: 50px;
+    left: 330px;
+}
+
+.inputImage-container .box-inputImg figure {
+    width: 100%;
+}
+
+.inputImage-container .box-inputImg img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.inputImage-container .box-inputImg figcaption {
+    font-size: 13px;
+    text-align: center;
+}
+
+
+/* --------------------------------------------------- */
+
+.profile-container .btn-save {
+    grid-column: 2/3;
+}
+
+.profile-container .btn-save button {
+    padding: 6px 25px;
+    background: var(--highlight-color);
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}

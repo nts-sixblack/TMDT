@@ -1,0 +1,198 @@
+.header {
+    padding: 5px 15px;
+    background: white;
+    border: none;
+}
+
+.header img {
+    width: 100%;
+}
+
+.header ul {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    align-items: center;
+}
+
+.header ul .header__logo {
+    width: 100px;
+    margin-right: 5px;
+}
+
+.header ul .header__title {
+    flex-grow: 1;
+    font-size: 19px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: var(--gray-color);
+}
+
+.header ul .header__account {
+    border-radius: 40px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.header ul .header__account a {
+    display: flex;
+    flex-flow: row;
+    /* height: 40px; */
+    font-size: 14px;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px 5px 5px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.header ul .header__account:hover {
+    background: var(--main-bg-color);
+}
+
+.header ul .header__account img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.header ul .header__notify {
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+.header ul .header__logout ion-icon,
+.header ul .header__notify ion-icon {
+    font-size: 22px;
+    background-color: var(--main-bg-color);
+    border-radius: 100px;
+    padding: 7px;
+    cursor: pointer;
+    position: relative;
+}
+
+.header ul .header__logout ion-icon {
+    color: var(--fontb-color);
+    margin-left: 5px;
+}
+
+.header ul .header__notify .notify-box {
+    position: absolute;
+    background-color: var(--font-color);
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 40px;
+    width: 380px;
+    height: 450px;
+    right: 30px;
+    top: 60px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+    animation: sellerNotify-animate ease-in .25s;
+    transform-origin: 90% top;
+    display: none;
+    will-change: sellerNotify-animate, transform;
+}
+
+.header ul .header__notify:hover>.notify-box {
+    display: grid;
+}
+
+@keyframes sellerNotify-animate {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.notify-box::before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    top: -7px;
+    right: 40px;
+    transform: rotate(45deg);
+    position: absolute;
+    background-color: inherit;
+    border-left: 1px solid var(--bg-color);
+    border-top: 1px solid var(--bg-color);
+}
+
+.notify-box::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: -30px;
+    right: 0;
+}
+
+.notify-box ul {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    overflow-y: scroll;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.notify-box ul .item-notify {
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+    background-color: var(--main-bg-color);
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.notify-box ul .item-notify:hover {
+    background-color: white;
+}
+
+.notify-box ul .item-notify img {
+    object-fit: contain;
+    margin: auto;
+}
+
+.notify-box ul .item-notify p {
+    font-size: 14px;
+    font-weight: 300;
+    height: 2.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: wrap;
+}
+
+.notify-box ul .item-notify span {
+    font-size: 13px;
+    font-weight: 250;
+}
+
+.notify-box ul .item-notify ion-icon {
+    font-size: 13px;
+    background: none;
+    padding: 0 3px;
+}
+
+.notify-box button {
+    border: none;
+    background: none;
+    border-top: 1px solid #ccc;
+}
+
+.notify-box button a:hover {
+    color: var(--highlight-color);
+}
+
+.notify-box button a {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--fontb-color);
+}

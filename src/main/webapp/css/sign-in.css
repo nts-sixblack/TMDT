@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "WenQuanYi Zen Hei", "Hiragino Sans GB", "儷黑 Pro", "LiHei Pro", "Heiti TC", "Microsoft JhengHei UI", "Microsoft JhengHei", sans-serif;
+
+}
+.header-bar{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.header-bar-logo{
+    flex-basis: 12%;
+}
+.header-bar-logo img{
+    width: 90%;
+    height: 100%;
+}
+.header-bar-name{
+    flex-basis: 15%;
+    font-size: 23px;
+    margin-top: 12px;
+}
+.header-bar-support{
+    flex-grow: 1;
+    margin-top: 15px;
+}
+.header-bar-support a{
+    font-size: 13px;
+    color: var(--highlight-color);
+    text-decoration: none;
+    float: right;
+    margin-top: 5px;
+}
+/*_-----------------------*/
+.container{
+    background-color: var(--main-color);
+    padding: 50px;
+    max-width: 100%;
+    margin-top: 20px;
+
+}
+.form-signin{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-flow: column;
+    width: 300px;
+    margin: 20px 10px;
+    padding: 40px;
+    position: relative;
+    left: 58%;
+    border-radius: 3px;
+}
+.form-signin p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.form-signin input{
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    line-height: 35px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+.form-signin label{
+    height: 25px;
+    margin-top: 30px;
+    line-height: 25px;
+    background-color: var(--highlight-color);
+    text-align: center;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.form-signin label:hover{
+    opacity: .8;
+}
+.form-signin a{
+    font-size: 12px;
+    margin: 7px 5px 0 5px;
+}
+.form-signin span{
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    background-color: var(--bg-color);
+    padding: 5px;
+    transform: translateY(12px);
+    width: 130px;
+    margin: 0 auto;
+    text-align: center;
+}
+.other-with{
+    display: flex;
+    justify-content: space-between;
+}
+.other-with-item{
+    width: 145px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.other-with-item i{
+    flex-basis: 50px;
+    padding-top: 7px;
+}
+.other-with-item p{
+    font-size: 13px;
+}
+.other-with-item:nth-child(1){
+    background-color: rgb(0,85,233);
+}
+.other-with-item:nth-child(2){
+    background-color: rgb(250,38,17);
+}
+.form-signin a{
+    text-decoration: none;
+}
+.form-signin span a{
+    text-decoration: none;
+    color: var(--highlight-color);
+}
+

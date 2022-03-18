@@ -1,0 +1,88 @@
+.account-address {
+    display: flex;
+    flex-flow: column;
+    width: 900px;
+}
+
+.account-address h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.create-new-address {
+    max-width: 100%;
+    background: white;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.create-new-address ion-icon {
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.create-new-address:hover {
+    border: 1px dashed var(--main-color);
+    transition: .1s;
+}
+
+.account-address-item {
+    background: white;
+    max-width: 100%;
+    background: white;
+    padding: 13px 16px;
+    margin: 0 !important;
+    margin-top: 15px !important;
+    position: relative;
+}
+
+.account-address-item h4 {
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.account-address-item p {
+    font-size: 14px;
+    line-height: 1.45rem;
+}
+
+.account-address-item span {
+    color: var(--gray-color);
+    font-size: 13px;
+}
+
+.account-address-item button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: var(--main-bg-color);
+    padding: 6px 8px;
+    outline: none;
+    color: rgb(219, 4, 4);
+    cursor: pointer;
+}
+
+.account-address-item a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 14px;
+    position: absolute;
+    top: 16px;
+    right: 60px;
+}
+
+.account-address-item .check-default {
+    text-transform: none;
+    font-size: 12px;
+    color: green;
+}
+
+.account-address-item .check-default ion-icon {
+    font-size: 14px;
+    margin-left: 5px;
+    transform: translateY(2px);
+}

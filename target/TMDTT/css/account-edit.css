@@ -1,0 +1,93 @@
+.account-edit {}
+
+.account-edit h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.account-edit .form-edit {
+    margin-top: 20px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding: 13px 16px;
+}
+
+.account-edit .form-edit p {
+    font-size: 14px;
+    color: black;
+    line-height: 50px;
+}
+
+.account-edit .form-edit input {
+    height: 25px;
+    padding: 3px 10px;
+    width: 500px;
+    line-height: 50px;
+    border: 1px solid #ccc;
+    color: var(--gray-color);
+    transform: translateY(10px);
+    outline: none;
+}
+
+.account-edit .form-edit .select-gender {
+    display: grid;
+    grid-template-columns: 20px 50px 20px 50px;
+}
+
+.account-edit .form-edit .select-gender input {
+    height: 17px;
+    width: 15px;
+    transform: translateY(15px);
+}
+
+.account-edit .form-edit .select-gender label {
+    transform: translateY(15px);
+    font-size: 14px;
+    color: var(--gray-color);
+}
+
+.account-edit .form-edit .birdthday select {
+    width: 80px;
+    height: 34px;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    background-color: var(--main-bg-color);
+    transform: translateY(11px);
+}
+
+.account-edit .form-edit .birdthday input {
+    width: 80px;
+}
+
+.account-edit .form-edit .btn-submit {
+    grid-column: 2/3;
+    margin-top: 50px;
+}
+
+.account-edit .form-edit .btn-submit button {
+    font-size: 15px;
+    padding: 8px 10px;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: var(--font-color);
+    width: 130px;
+    cursor: pointer;
+}
+
+.account-edit .form-edit .btn-submit button:nth-child(2) {
+    margin-left: 5px;
+    background-color: white;
+    color: var(--main-color);
+}
+
+.account-edit .form-edit .btn-submit button:hover {
+    opacity: .9;
+}
+
+.changePass-form {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}

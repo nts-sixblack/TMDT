@@ -1,0 +1,101 @@
+.shop-container {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.shop-container .shop-infor {
+    display: grid;
+    grid-template-columns: 110px 150px 1fr;
+    grid-template-rows: 100px 35px;
+    background: url('../images/background-store/background-1.jpeg');
+    background-size: cover;
+    height: 140px;
+    color: white;
+}
+
+.shop-container .shop-infor img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+    border: 4px solid #ccc;
+    transform: translate(20px, 20px);
+}
+
+.shop-container .shop-infor .shop-name {
+    transform: translateY(35px);
+}
+
+.shop-container .shop-infor .shop-name b {
+    font-size: 17px;
+}
+
+.shop-container .shop-infor .shop-name span {
+    font-size: 12px;
+}
+
+.shop-container .shop-infor button {
+    border: 1px solid var(--highlight-color);
+    background: none;
+    padding: 6px 15px;
+    color: white;
+    transform: translateY(40px);
+    cursor: pointer;
+}
+
+.shop-container .shop-infor button:hover {
+    opacity: .9;
+}
+
+.shop-container .shop-infor button:nth-child(1) {
+    background: var(--highlight-color);
+}
+
+.navbar-shop {
+    grid-column: 1/4;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar-shop ul {
+    display: flex;
+    flex-flow: row;
+    list-style: none;
+    transform: translate(100px, 10px);
+    height: 28px;
+}
+
+.navbar-shop ul li.is-active {
+    border-bottom: 2px solid var(--highlight-color);
+}
+
+.navbar-shop ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 13px;
+}
+
+.navbar-shop input {
+    height: 25px;
+    width: 180px;
+    font-size: 14px;
+    line-height: 16.1px;
+    padding: 0 5px;
+    outline: none;
+    border: none;
+    transform: translate(-10px, 5px);
+    padding-left: 30px;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+.navbar-shop ion-icon {
+    font-size: 17px;
+    position: absolute;
+    color: var(--gray-color);
+    z-index: 2;
+    transform: translate(-5px, 8px);
+}

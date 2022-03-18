@@ -1,0 +1,100 @@
+.report-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-text,
+.form-profile,
+.form-input {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 35px;
+    gap: 10px;
+    line-height: 18px;
+}
+
+.form-text p,
+.form-profile p,
+.form-input p {
+    font-weight: 200;
+    text-align: right;
+}
+
+.form-report {
+    margin-top: 20px;
+}
+
+.form-profile,
+.form-input {
+    margin-top: 15px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.form-profile span {
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    border-bottom: 1px solid #ccc;
+    width: 400px;
+}
+
+.form-input input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 8px;
+    width: 400px;
+    background: white;
+    transition: .2s;
+}
+
+.form-input input:focus {
+    background: var(--main-bg-color);
+}
+
+.avatar-staff {
+    border-bottom: 1px solid var(--main-color);
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    height: 60px;
+}
+
+.avatar-staff img {
+    width: 100px;
+    border-bottom: 3px solid var(--main-color);
+    border-radius: 50px;
+    transform: translateY(10px);
+    margin-right: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.account-select {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.account-option {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--main-bg-color);
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.account-option ion-icon {
+    font-size: 25px;
+    padding: 13px 16px;
+}
+
+.account-option-mess {
+    flex: 1;
+}
+
+.staff-custom {
+    width: 150px;
+    margin-top: 20px;
+}
