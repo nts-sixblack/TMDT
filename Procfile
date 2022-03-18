@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -war target/TMDTT.war --port $PORT target/*.war
+web: java $JAVA_OPTS -war target/dependency/webapp-runner.jar --port $PORT target/*.war
