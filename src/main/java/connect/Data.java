@@ -13,27 +13,27 @@ public class Data {
 //        return connection;
 //    }
 
-    public static String name = "tmdt";
-
-    public static Connection getConnection() throws Exception {
-        Class.forName("com.mysql.cj.jdbc.Driver");
-        String url = "jdbc:mysql://localhost:3306/tmdt";
-        String user = "root";
-        String password = "123456789";
-        Connection connection = DriverManager.getConnection(url, user, password);
-        return connection;
-    }
-
-//    public static String name = "heroku_2a7c63b7d0b3a14";
+//    public static String name = "tmdt";
 //
 //    public static Connection getConnection() throws Exception {
 //        Class.forName("com.mysql.cj.jdbc.Driver");
-//        String url = "jdbc:mysql://us-cdbr-east-05.cleardb.net:3306/heroku_3618060e318d7cb";
-//        String user = "bd2568bcc77370";
-//        String password = "fa6c7236";
+//        String url = "jdbc:mysql://localhost:3306/tmdt";
+//        String user = "root";
+//        String password = "123456789";
 //        Connection connection = DriverManager.getConnection(url, user, password);
 //        return connection;
 //    }
+
+    public static String name = "heroku_e13b39f7545a664";
+
+    public static Connection getConnection() throws Exception {
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        String url = "jdbc:mysql://us-cdbr-east-05.cleardb.net:3306/heroku_e13b39f7545a664";
+        String user = "b78a52ca5575d0";
+        String password = "c2db74c0";
+        Connection connection = DriverManager.getConnection(url, user, password);
+        return connection;
+    }
 
 
 
